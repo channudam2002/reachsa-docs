@@ -1,0 +1,23 @@
+{
+    "name": "reachsa-docs",
+    "version": "0.0.1",
+    "description": "IoT Plaform",
+    "main": "index.js",
+    "authors": {
+        "name": "Ray Channudam",
+        "email": "channudam.ray@reachsa.digital"
+    },
+    "repository": "reachsa-docs/reachsa-docs",
+    "scripts": {
+        "dev": "concurrently --kill-others \"export NODE_OPTIONS=--openssl-legacy-provider\" \" vuepress dev src\"",
+        "build": "vuepress build src"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^7.6.0",
+        "vuepress": "^1.5.3"
+    },
+    "dependencies": {
+        "webpack": "^4.46.0"
+    }
+}
