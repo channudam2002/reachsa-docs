@@ -48,9 +48,10 @@ module.exports = {
         sidebar: {
             '/guide/': [{
                 title: 'Guide',
-                collapsable: false,
+                collapsable: true,
                 children: [
                     '',
+                    'How-To-Solder-A-Beginner-Guide',
                     'using-vue',
                 ]
             }],
