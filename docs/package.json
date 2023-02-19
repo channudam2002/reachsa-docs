@@ -1,7 +1,7 @@
 {
     "name": "reachsa-docs",
     "version": "0.0.1",
-    "description": "IoT Plaform",
+    "description": "Internet of Thing skills that you need to know",
     "main": "index.js",
     "authors": {
         "name": "Ray Channudam",

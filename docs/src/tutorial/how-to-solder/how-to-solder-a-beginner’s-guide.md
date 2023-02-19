@@ -1,6 +1,5 @@
-﻿
-# **How To Solder: A Beginner’s Guide**
-![how to solder](././Aspose.Words.d6d73d99-3189-4fd7-a5dc-7bd669e38a3c.001.jpeg)
+﻿# **How To Solder: A Beginner’s Guide**
+![how to solder](./Aspose.Words.d6d73d99-3189-4fd7-a5dc-7bd669e38a3c.001.jpeg)
 
 Learning how to solder w/ proper soldering techniques is a fundamental skill every maker should master. In this tutorial, we outline the basics of soldering irons, soldering stations, types of solder, desoldering and safety tips. Whether you’re building a robot or working with Arduino, knowing how to solder will come in handy.
 

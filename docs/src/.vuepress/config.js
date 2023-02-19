@@ -37,32 +37,43 @@ module.exports = {
                 link: '/guide/',
             },
             {
-                text: 'Config',
-                link: '/config/'
+                text: 'Tutorial',
+                link: '/tutorial/'
             },
             {
-                text: 'VuePress',
-                link: 'https://v1.vuepress.vuejs.org'
+                text: 'Example',
+                link: '/example/'
+            },
+            {
+                text: 'Reachsa.io',
+                link: 'https://reachsa.digital'
             }
         ],
         sidebar: {
             '/guide/': [{
                 title: 'Guide',
-                collapsable: true,
-                children: [
-                    '',
-                    'How-To-Solder-A-Beginner-Guide',
-                    'using-vue',
-                ]
-            }],
-            '/config/': [{
-                title: 'Configuration',
                 collapsable: false,
                 children: [
                     '',
-                    'using-vue',
+                ]
+            }],
+            '/tutorial/': [{
+                title: "Tutorial",
+                collapsable: false,
+                children: [
+                    '',
+                    'basic-electronic/basic-electronic',
+                    'how-to-solder/how-to-solder-a-beginner’s-guide',
+                ]
+            }],
+            '/example/': [{
+                title: "Example",
+                collapsable: false,
+                children: [
+                    '',
                 ]
             }]
+
         }
     },
 
