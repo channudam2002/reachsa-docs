@@ -12,8 +12,7 @@
         "export": "export NODE_OPTIONS=--openssl-legacy-provider",
         "dev": "vuepress dev src",
         "build": "vuepress build src",
-        "build_1": "npm run export && npm run build",
-        "dev_1": "npm run export && npm run dev"
+        "build_1": "npm run export && npm run build"
     },
     "license": "MIT",
     "devDependencies": {

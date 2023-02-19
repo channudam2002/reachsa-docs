@@ -12,15 +12,4 @@ features:
 - title: Feature 3 Title
   details: Feature 3 Description
 footer: Made by Reachsa Engineering Team with ❤️
-
-```
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWMMFN2SF6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZWMMFN2SF6');
-</script>
-```
 ---
