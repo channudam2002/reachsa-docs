@@ -62,7 +62,6 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '',
-                    'basic-electronic/basic-electronic',
                     'how-to-solder/how-to-solder-a-beginner’s-guide',
                 ]
             }],
