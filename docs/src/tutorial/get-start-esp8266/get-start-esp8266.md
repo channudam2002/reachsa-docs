@@ -25,7 +25,7 @@ To test LED blinking on the ESP8266, you need to follow these steps:
 pinMode(D0, OUTPUT);
 
 5. Blink the LED: In your loop() function, add the following code to blink the LED:
-
+```
 digitalWrite(D0, HIGH);
 
 delay(1000);
@@ -33,6 +33,7 @@ delay(1000);
 digitalWrite(D0, LOW);
 
 delay(1000);
+```
 
 This code will turn on the LED for one second, then turn it off for one second, and repeat.
 
