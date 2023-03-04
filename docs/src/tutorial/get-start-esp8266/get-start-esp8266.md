@@ -181,6 +181,7 @@ This code sets the ESP8266 module in access point mode and creates a WiFi networ
 
 To create a button on a web page that replaces the "Hello, world!" text with a message when clicked, you can use HTML, CSS, and JavaScript. Here's an example code snippet that you can use:
 
+```
 <!DOCTYPE html>
 
 <html>
@@ -222,6 +223,7 @@ To create a button on a web page that replaces the "Hello, world!" text with a m
 </body>
 
 </html>
+```
 
 In this code, we've created a button element with an ID of "button" and a paragraph element with an ID of "message". We've also defined some CSS styles to apply to the "message" element.
 
@@ -240,6 +242,7 @@ To create a button on ESP8266 that can be controlled by a web app on a phone, yo
 
 Here is an example code snippet that you can use to get started:
 
+```
 #include <WiFi.h>
 
 #include <WebServer.h>
@@ -289,6 +292,7 @@ void loop() {
 `  `server.handleClient();
 
 }
+```
 
 This code sets up a web server on port 80 and listens for requests to the URLs "/button/on" and "/button/off". When a request is received, it toggles the state of the D1 GPIO pin and sends a response back to the client.
 
