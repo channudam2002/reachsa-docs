@@ -54,6 +54,7 @@ ESP8266 is a popular WiFi module that can be used in station mode to connect to 
 
 Here is a sample code that demonstrates how to use ESP8266 on station mode:
 
+```
 #include <ESP8266WiFi.h>
 
 const char\* ssid = "your\_SSID";
@@ -62,39 +63,39 @@ const char\* password = "your\_PASSWORD";
 
 void setup() {
 
-`  `Serial.begin(9600);
+    Serial.begin(9600);
 
-`  `delay(1000);
+    delay(1000);
 
-`  `// Connect to WiFi network
+    // Connect to WiFi network
 
-`  `WiFi.begin(ssid, password);
+    WiFi.begin(ssid, password);
 
-`  `Serial.println("Connecting to WiFi...");
+    Serial.println("Connecting to WiFi...");
 
-`  `while (WiFi.status() != WL\_CONNECTED) {
+    while (WiFi.status() != WL\_CONNECTED) {
 
-`    `delay(1000);
+        delay(1000);
 
-`    `Serial.println("Connecting to WiFi...");
+        Serial.println("Connecting to WiFi...");
 
-`  `}
+    }
 
-`  `Serial.println("Connected to WiFi network");
+    Serial.println("Connected to WiFi network");
 
-`  `Serial.print("Local IP address: ");
+    Serial.print("Local IP address: ");
 
-`  `Serial.println(WiFi.localIP());
+    Serial.println(WiFi.localIP());
 
 }
 
 void loop() {
 
-`  `// your code goes here
+// your code goes here
 
 }
 
-
+```
 
 
 
@@ -113,6 +114,7 @@ ESP8266 can also be used in access point mode to create its own WiFi network. He
 
 Here is a sample code that demonstrates how to use ESP8266 on access point mode:
 
+```
 #include <ESP8266WiFi.h>
 
 #include <ESP8266WebServer.h>
@@ -125,51 +127,52 @@ ESP8266WebServer server(80);
 
 void handleRoot() {
 
-`  `String html = "<html><body><h1>Hello, world!</h1></body></html>";
+    String html = "<html><body><h1>Hello, world!</h1></body></html>";
 
-`  `server.send(200, "text/html", html);
+    server.send(200, "text/html", html);
 
 }
 
 void setup() {
 
-`  `Serial.begin(9600);
+    Serial.begin(9600);
 
-`  `delay(1000);
+    delay(1000);
 
-`  `// Set WiFi mode to access point
+    // Set WiFi mode to access point
 
-`  `WiFi.mode(WIFI\_AP);
+    WiFi.mode(WIFI\_AP);
 
-`  `// Create WiFi network
+    // Create WiFi network
 
-`  `WiFi.softAP(ssid, password);
+    WiFi.softAP(ssid, password);
 
-`  `Serial.println("Access point started");
+    Serial.println("Access point started");
 
-`  `Serial.print("SSID: ");
+    Serial.print("SSID: ");
 
-`  `Serial.println(ssid);
+    Serial.println(ssid);
 
-`  `Serial.print("IP address: ");
+    Serial.print("IP address: ");
 
-`  `Serial.println(WiFi.softAPIP());
+    Serial.println(WiFi.softAPIP());
 
-`  `// Start web server
+    // Start web server
 
-`  `server.on("/", handleRoot);
+    server.on("/", handleRoot);
 
-`  `server.begin();
+    server.begin();
 
-`  `Serial.println("Web server started");
+    Serial.println("Web server started");
 
 }
 
 void loop() {
 
-`  `server.handleClient();
+    server.handleClient();
 
 }
+```
 
 
 This code sets the ESP8266 module in access point mode and creates a WiFi network with the specified SSID and password. It also creates a web server and handles incoming requests. When a client connects to the network and sends a request to the server's IP address, the server responds with an HTML page that says "Hello, world!". You can customize the handleRoot() function to serve your own web pages or perform other actions.
@@ -184,37 +187,37 @@ To create a button on a web page that replaces the "Hello, world!" text with a m
 
 <head>
 
-`  `<title>Button Example</title>
+    <title>Button Example</title>
 
-`  `<style>
+    <style>
 
-`    `#message {
+    #message {
 
-`      `font-size: 24px;
+    font-size: 24px;
 
-`      `margin-top: 20px;
+    margin-top: 20px;
 
-`    `}
+    }
 
-`  `</style>
+    </style>
 
 </head>
 
 <body>
 
-`  `<button id="button">Click me!</button>
+    <button id="button">Click me!</button>
 
-`  `<p id="message">Hello, world!</p>
+    <p id="message">Hello, world!</p>
 
-`  `<script>
+    <script>
 
-`    `document.getElementById("button").addEventListener("click", function() {
+    document.getElementById("button").addEventListener("click", function() {
 
-`      `document.getElementById("message").innerHTML = "You clicked the button!";
+    document.getElementById("message").innerHTML = "You clicked the button!";
 
-`    `});
+    });
 
-`  `</script>
+    </script>
 
 </body>
 
