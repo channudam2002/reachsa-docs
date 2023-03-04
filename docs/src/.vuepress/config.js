@@ -62,7 +62,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '',
-                    // 'how-to-solder/how-to-solder-a-beginner’s-guide',
+                    'how-to-solder/how-to-solder-a-beginner’s-guide',
+                    'get-start-esp8266/get-start-esp8266'
                 ]
             }],
             '/example/': [{
